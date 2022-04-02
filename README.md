@@ -1,3 +1,12 @@
+<object width="425" height="350">
+  <param name="movie" value="https://youtu.be/hzTEZf-M2SA" />
+  <param name="wmode" value="transparent" />
+  <embed src="https://youtu.be/hzTEZf-M2SA"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>
+
+
 # pdf-to-anki-occlusion-notes
 this project uses razer macros and python to send selected text to anki in the form of closed deletion notes, with support for multiple closed deletions on the same note
 ## Installation 
