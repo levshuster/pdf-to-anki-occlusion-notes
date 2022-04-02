@@ -21,6 +21,10 @@ then the text "pointer" would be selected as the "new close deletion" macro is t
 and finally the text "pointee" would be selected while triggering the "continue close deletion" macro
 ## Importing software generated notes to anki
 after the to_be_processed.txt file is fully populated with the desiered notes
+### Import automatically
+1. Launch anki 
+2. run "process and export to anki.exe"
+### Import manually
 1. save the document
 2. run "strings_to_anki_notes.py"
 3. go to anki and follow the prompts to import a file
