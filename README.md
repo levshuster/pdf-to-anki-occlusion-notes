@@ -12,9 +12,9 @@ Macros assume the following positioning of applications in your taskbar: Chrome 
 ## Using the software
 to set the text of an anki note trigger the razer macro titled "text of note"
 to create a new closed deletion trigger the razer macro titled "new close deletion"
-to add a second part to an existing closed deletion trigger the razer macro titled "continue close deletion"*
+to add a second part to an existing closed deletion trigger the razer macro titled "continue close deletion"¹
 
-* and example of continueing a closed deletion would be the following note: "A {{c2::pointer}} is usually drawn as a {{c1::box}}, and the {{c2::reference}} it stores is drawn as an {{c1::arrow}} starting in the box and leading to its {{c2::pointee}}." 
+¹an example of continueing a closed deletion would be the following note: "A {{c2::pointer}} is usually drawn as a {{c1::box}}, and the {{c2::reference}} it stores is drawn as an {{c1::arrow}} starting in the box and leading to its {{c2::pointee}}." 
 Here the text "A pointer is usually drawn as a box, and the reference it stores is drawn as an arrow starting in the box and leading to its pointee." would be selected as the "text of note" macro is triggered
 then the text "box" and "arrow" would be selected in turn while triggering the "continue close deletion" macro
 then the text "pointer" would be selected as the "new close deletion" macro is triggered
