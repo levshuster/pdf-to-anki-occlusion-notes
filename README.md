@@ -1,10 +1,4 @@
-<object width="425" height="350">
-  <param name="movie" value="https://youtu.be/hzTEZf-M2SA" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://youtu.be/hzTEZf-M2SA"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hzTEZf-M2SA/0.jpg)](https://youtu.be/hzTEZf-M2SA)
 
 
 # pdf-to-anki-occlusion-notes
