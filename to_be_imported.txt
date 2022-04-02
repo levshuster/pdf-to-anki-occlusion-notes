@@ -1,0 +1,14 @@
+C provides {{c1::fixed-length}} arrays
+	
+arrays occupy a {{c1::contiguous chunk of}} memory with the elements in {{c1::index }}order
+	
+a C string is simply an {{c1::array of char}} ({{c1::array of 1-byte values}}) ending with a{{c2:: null terminator}} {{c2::(0x00}} or '{{c2::\0}}')
+	
+The terminator value is crucial because {{c1::otherwise C has no way of knowing where the string ends}}
+	
+with #include <string.h>, {{c1::strlen(s)}} returns the {{c2::length of the string (char *) s}}, {{c2::not counting}} the null terminator
+	
+with #include <string.h>, {{c1::strcpy(dest, src)}} {{c2::copies the string at dest to src}} (both arguments are of type {{c2::char *}} ({{c2::pointers to the start of a char array}})
+	
+{{c1::p->field}} is shorthand for {{c2::(*p).field}}
+	
