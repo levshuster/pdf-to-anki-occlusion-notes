@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="icon" href="./Anki.ico" type="image/x-icon">
+    <script src="strings_to_anki_notes.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Enter Text Generated From Macros to create Anki cards</h1>  
+      <textarea id="text-val" rows="10" cols="100">This is the content of my file</textarea><br/>
+      <br>
+      <b>Name File: </b><input type="text" id="file-name" value="ankinotes.txt"><br/>
+      <button onclick="saveToCookies(document.getElementById('text-val').value)">Save Draft</button><button onclick="document.getElementById('text-val').value=getFromCookies()">Restore Draft</button>
+      <br><br>
+      <button onclick="saveTextFile()">Generate Anki Cards</button>
+      <br>
+      <h1>How to Import Saved .TXT File Into Anki</h1>
+      <ol>
+        <li>Navigate to the destination deck</li>
+        <li>Select "File"-->"Import" (or press Ctrl+Shit+I)</li>
+        <li>Leaving the default file type (Text Seperated by Tabs or Semicolons) select the .TXT file</li>
+        <li>Click "Open"</li>
+        <li>Ensure "Type" is set to "Cloze"</li>
+        <li>Click "Feild seperated by" and enter "\t"</li>
+        <li>Click "Import"</li>
+      </ol>
+  </main>
+</body>
+</html>

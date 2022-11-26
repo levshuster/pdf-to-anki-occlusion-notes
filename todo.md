@@ -1,0 +1,11 @@
+- [ ] update razer macros for Hebrew flag chars
+- [ ] update documentation
+- [ ] make more ts-ey (hard typing, nothing mutable)
+- [ ] correct spelling
+- [ ] organize code
+- [ ] put this onto a git branch
+- [ ] make tool live on git pages
+- [ ] make HTML look nice
+- [ ] record a tutorial video
+- [ ] make macros for autohotkey
+- [ ] test whether issue with chrome is beccause of chrome or exstension
