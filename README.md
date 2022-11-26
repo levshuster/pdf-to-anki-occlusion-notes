@@ -1,3 +1,8 @@
+# Try it out live:
+# [Try it out live:]: https://levshuster.github.io/pdf-to-anki-occlusion-notes/
+
+<https://levshuster.github.io/pdf-to-anki-occlusion-notes/>
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hzTEZf-M2SA/0.jpg)](https://youtu.be/hzTEZf-M2SA)
 
 
