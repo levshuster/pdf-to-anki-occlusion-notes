@@ -1,9 +1,9 @@
 - [ ] update razer macros for Hebrew flag chars
 - [ ] update documentation
-- [ ] make more ts-ey (hard typing, nothing mutable)
+- [x] make more ts-ey (hard typing, nothing mutable)
 - [ ] correct spelling
-- [ ] organize code
-- [ ] put this onto a git branch
+- [x] organize code
+- [x] put this onto a git branch
 - [ ] make tool live on git pages
 - [ ] make HTML look nice
 - [ ] record a tutorial video
