@@ -1,31 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Website</title>
     <link rel="icon" href="./Anki.ico" type="image/x-icon">
     <script src="strings_to_anki_notes.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <main>
-      <h1>Enter Text Generated From Macros to create Anki cards</h1>  
-      <textarea id="text-val" rows="10" cols="100">This is the content of my file</textarea><br/>
-      <br>
-      <b>Name File: </b><input type="text" id="file-name" value="ankinotes.txt"><br/>
-      <button onclick="saveToCookies(document.getElementById('text-val').value)">Save Draft</button><button onclick="document.getElementById('text-val').value=getFromCookies()">Restore Draft</button>
-      <br><br>
-      <button onclick="saveTextFile()">Generate Anki Cards</button>
-      <br>
-      <h1>How to Import Saved .TXT File Into Anki</h1>
-      <ol>
-        <li>Navigate to the destination deck</li>
-        <li>Select "File"-->"Import" (or press Ctrl+Shit+I)</li>
-        <li>Leaving the default file type (Text Seperated by Tabs or Semicolons) select the .TXT file</li>
-        <li>Click "Open"</li>
-        <li>Ensure "Type" is set to "Cloze"</li>
-        <li>Click "Feild seperated by" and enter "\t"</li>
-        <li>Click "Import"</li>
-      </ol>
+    <main style="margin: 5%">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Enter Text Generated From Macros to create Anki cards</h5>
+                <!-- <h1>Enter Text Generated From Macros to create Anki cards</h1>   -->
+                <textarea id="text-val" rows="10" style="width: 100%; outline: lightgray">Notes with hebrew flag characters generated from macros</textarea><br/>
+                <br>
+                <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                    <button type="button" onclick="saveToCookies(document.getElementById('text-val').value)" class="btn btn-outline-dark">Save Draft</button>
+                    <button type="button" onclick="document.getElementById('text-val').value=getFromCookies()" class="btn btn-outline-dark">Restore Draft</button>
+                </div>
+                <sup> *Depending on your browsers cookie setting persistant saving may not function.</sup>
+            </div>
+        </div>
+        <div class="card" style="margin-top:2%; margin-bottom:2%">
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary btn-lg" onclick="saveTextFile()">Generate Anki Cards</button>
+                <b style="margin-left: 60%;">Name File: </b><input type="text" id="file-name" value="ankinotes.txt"><br/>
+            </div>
+        </div>
+      <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">How to Import Saved .TXT File Into Anki</h5>
+            <ol>
+                <li>Navigate to the destination deck</li>
+                <li>Select "File"-->"Import" (or press Ctrl+Shit+I)</li>
+                <li>Leaving the default file type (Text Seperated by Tabs or Semicolons) select the .TXT file</li>
+                <li>Click "Open"</li>
+                <li>Ensure "Type" is set to "Cloze"</li>
+                <li>Click "Feild seperated by" and enter "\t"</li>
+                <li>Click "Import"</li>
+              </ol>
+        </div>
+    </div>
   </main>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </html>
