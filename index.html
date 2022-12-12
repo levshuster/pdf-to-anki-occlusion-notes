@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <title>My Website</title>
     <link rel="icon" href="./Anki.ico" type="image/x-icon">
+    <style>
+      /* Add some basic styling to make the page look nicer */
+      body {
+        font-family: Verdana, sans-serif;
+        text-align: center;
+        margin: auto;
+      }
+      main {
+        margin: auto;
+        width: 80%;
+        text-align: left;
+        padding: 20px;
+      }
+      /* Style the textarea and input fields to make them more prominent */
+      textarea, input {
+        width: 100%;
+        font-family: Verdana, sans-serif;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      /* Style the buttons to make them more noticeable */
+      button {
+        background-color: #777;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      /* Style the list to make it more readable */
+      ol {
+        text-align: left;
+        margin: 20px 0;
+        padding-left: 20px;
+      }
+    </style>
     <script src="strings_to_anki_notes.js"></script>
   </head>
   <body>
@@ -11,7 +51,7 @@
       <h1>Enter Text Generated From Macros to create Anki cards</h1>  
       <textarea id="text-val" rows="10" cols="100">This is the content of my file</textarea><br/>
       <br>
-      <b>Name File: </b><input type="text" id="file-name" value="ankinotes.txt"><br/>
+      <b>Name File: </b><input type="text" id="file-name" value="Ankinotes.txt"><br/>
       <button onclick="saveToCookies(document.getElementById('text-val').value)">Save Draft</button><button onclick="document.getElementById('text-val').value=getFromCookies()">Restore Draft</button>
       <br><br>
       <button onclick="saveTextFile()">Generate Anki Cards</button>
